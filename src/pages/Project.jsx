@@ -1,10 +1,11 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 const Project = () => {
   return (
-    <div>
-      hi
-    </div>
+    <Box>
+      
+    </Box>
   )
 }
 
