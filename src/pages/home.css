@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.bg {
+  background-image: url("https://www.dell.com/wp-uploads/2022/05/programming-code-abstract-technology-background-of-software-developer-picture-id871030872.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 2.9;
+}
+:root {
+    --bg-color:#fcfcfc;
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 20;
+  }
+  
+  
+  .mern {
+    font-size: clamp(2rem, 3vw + 2rem, 4rem);
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    width: max-content;
+    font-weight: bolder;
+  }
+  
+  .mern::before,
+  .mern::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .mern::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  .mern::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

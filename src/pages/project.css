@@ -1,0 +1,7 @@
+.projectBox {
+overflow: hidden;
+}
+
+.projectBox:hover {
+transform: scale(1.1);
+}
