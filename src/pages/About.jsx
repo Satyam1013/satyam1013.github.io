@@ -64,7 +64,7 @@ const About = () => {
             from Balaghat, Madhya Pradesh.
           </Text>
           <Center>
-          <Link href='https://drive.google.com/file/d/1597wUE0jJ7zoPwmjYzjA5sYPnFKg1gPh/view?usp=sharing'>
+          <Link href='https://drive.google.com/file/d/1_WLMAMAwWY7QJy75ZKwgw-S-LDQ4MyLo/view?usp=sharing'>
                <Center borderRadius={'15px'} width={{base:'110px',sm:'150px'}} mt={{base:'5px',sm:'none'}} bgColor={'purple.500'} color='white'>
                Resume
                </Center>
@@ -74,7 +74,7 @@ const About = () => {
             fontSize={{ base: "12px", sm: "15px", md: "20", lg: "25px" }}
             mt="10px"
           >
-            Apart from coding, I am doing M.Sc. in Mathematics{" "}
+            Apart from coding & dsa, I have done M.Sc. in Mathematics{" "}
           </Text>
           <Text
             mt="10px"
