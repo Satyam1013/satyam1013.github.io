@@ -3,7 +3,7 @@ import React from 'react'
 
 const GithubStats = () => {
   return (
-    <div>
+    <Box>
         <Center>
       <Box>
       <Center>
@@ -46,7 +46,7 @@ const GithubStats = () => {
       <Image width={{base:'70%',md:'40%',lg:'30%'}} src='https://github-readme-stats.vercel.app/api/top-langs/?username=Satyam1013&theme=outrun&show_icons=true&hide_border=true&layout=compact' alt='github'/>
 
       </Center>
-    </div>
+    </Box>
   )
 }
 

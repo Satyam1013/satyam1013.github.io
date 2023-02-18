@@ -159,7 +159,6 @@ export default function Contact() {
                       bg: "green.500",
                     }}
                     mt='5%'
-                    isFullWidth
                   >
                     Send Message
                   </Button>

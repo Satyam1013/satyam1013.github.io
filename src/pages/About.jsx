@@ -87,8 +87,8 @@ const About = () => {
             display={"grid"}
             gridTemplateColumns={{ base: "100%", lg: "33% 33% 33%" }}
           >
-            {interest.map((el) => (
-              <Text color={"purple.400"}>{el}</Text>
+            {interest.map((el,i) => (
+              <Text key={i+500} color={"purple.400"}>{el}</Text>
             ))}
           </Box>
         </Box>

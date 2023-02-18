@@ -65,8 +65,8 @@ const Skill = () => {
         }}
         justifyContent="space-around"
       >
-        {skills.map((el) => (
-          <Center>
+        {skills.map((el,i) => (
+          <Center key={i+1300}>
             <Box
               width={{ base: "100px", sm: "140px", md: "170px", lg: "180px" }}
               height={{ base: "100px", sm: "140px", md: "170px", lg: "180px" }}
