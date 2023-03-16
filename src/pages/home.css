@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 .bg {
-  background-image: url("https://www.dell.com/wp-uploads/2022/05/programming-code-abstract-technology-background-of-software-developer-picture-id871030872.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 2.9;
+  background-image: url("https://media1.giphy.com/media/l0Iy0WGm1oN84idbO/giphy.gif?cid=ecf05e47jcmi4v46kgd540hlthhfwf2hhd2uqth6t5aziwx8&rid=giphy.gif&ct=g");
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  opacity: 1.9;
 }
 :root {
     --bg-color:#fcfcfc;
     --typewriterSpeed: 3s;
     --typewriterCharacters: 20;
   }
-  
+ 
   
   .mern {
     font-size: clamp(2rem, 3vw + 2rem, 4rem);
@@ -21,6 +21,7 @@
     position: relative;
     width: max-content;
     font-weight: bolder;
+    background-color: transparent;
   }
   
   .mern::before,
@@ -31,20 +32,22 @@
     right: 0;
     bottom: 0;
     left: 0;
+
   }
   
   .mern::before {
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards;
+      steps(var(--typewriterCharacters)) 2s forwards;
+    background-color: #040302;
   }
   
   .mern::after {
     width: 0.125em;
     background: black;
     animation: typewriter var(--typewriterSpeed)
-        steps(var(--typewriterCharacters)) 1s forwards,
-      blink 750ms steps(var(--typewriterCharacters)) infinite;
+        steps(var(--typewriterCharacters)) 5s forwards,
+      blink 770ms steps(var(--typewriterCharacters)) infinite;
   }
   
   

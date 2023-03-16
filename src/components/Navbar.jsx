@@ -16,9 +16,11 @@ import {
   Center,
   Link,
 } from "@chakra-ui/react";
+import "./navbar.css";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
+import { transform } from "framer-motion";
 
 const Links = [
   { id: 1, to: "/", text: "Home" },
@@ -102,15 +104,22 @@ export default function Navbar() {
             >
               {Links.map((link) => (
                 <NavLink to={link.to} key={link.id}>
-                  {link.text}
+                  <Box
+                  className="hover-underline-animation"
+                    _hover={{
+                      color: "#9f7aea",
+                      transform: "scale(1.2)",
+                      transition: "transform .9s",
+                    }}
+                  >
+                    {link.text}
+                  </Box>
                 </NavLink>
               ))}
               <Box>
-               
-                  <Link color={"purple.100"} href="/satyamCV.pdf" download>
-                    Resume
-                  </Link>
-             
+                <Link color={"purple.100"} href="/satyamCV.pdf" download>
+                  Resume
+                </Link>
               </Box>
             </HStack>
           </HStack>
@@ -118,7 +127,7 @@ export default function Navbar() {
             size={"sm"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
-            bgColor='transparent'
+            bgColor="transparent"
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
