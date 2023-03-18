@@ -22,3 +22,23 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.title {
+  /* font-family: "Cairo"; */
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+#naam {
+  background-image: url(https://media.giphy.com/media/usOikM00Flk139pNEv/giphy.gif);
+  /* background-size: cover; */
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin: 10px 0;
+}

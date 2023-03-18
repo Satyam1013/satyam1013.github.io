@@ -2,17 +2,17 @@ import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
-import GithubStats from "./GithubStats";
-import "./home.css";
+import GithubStats from "../components/GithubStats";
+import "../styles/home.css";
 import Project from "./Project";
 import Skill from "./Skills";
-import Timeline from "./Timeline";
+import Timeline from "../components/Timeline";
 import { useInView } from "react-intersection-observer";
-import { motion, spring, useAnimation } from "framer-motion";
+import { motion, spring } from "framer-motion";
 
 const Home = () => {
   const { ref, inView } = useInView();
-  const animation = useAnimation();
+  // const animation = useAnimation();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -23,8 +23,7 @@ const Home = () => {
     }
     // console.log(inView);
   }, [inView]);
-  // https://i.gifer.com/ULWr.gif
-  // bgColor={"#fcfcfc"}
+
 
   return (
     <Box className="bg">
@@ -45,6 +44,7 @@ const Home = () => {
             <Heading
               fontSize={{ base: "1.5rem", md: "3rem", lg: "4rem" }}
               color={"purple.400"}
+              id="name"
             >
               Satyam Banwale
             </Heading>
@@ -61,8 +61,9 @@ const Home = () => {
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
           <Heading
-            fontSize={{ base: "15px", sm: "1.1rem", md: "2rem", lg: "3rem" }}
-            className="mern"
+            fontSize={{ base: "13px", sm: "1.1rem", md: "2rem", lg: "3rem" }}
+            id="role"
+            m={{base:'10px'}}
             color={"purple.400"}
           >
             A MERN Stack Developer

@@ -1,6 +1,6 @@
 import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import "./timeline.css";
+import "../styles/timeline.css";
 
 const Timeline = () => {
   return (
@@ -70,8 +70,8 @@ const Timeline = () => {
           </Box>
           <Text>Master of Science (M.Sc.) - Mathematics</Text>
           <Box className="bottom">
-            <i>- Algebra</i>
-            <i>- Real Analysis</i>
+            <i>- Programming</i>
+           
             <i>- Differential Equations</i>
           </Box>
         </section>

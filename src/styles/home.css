@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.bg {
+  background-image: url("https://media1.giphy.com/media/l0Iy0WGm1oN84idbO/giphy.gif?cid=ecf05e47jcmi4v46kgd540hlthhfwf2hhd2uqth6t5aziwx8&rid=giphy.gif&ct=g");
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  opacity: 1.9;
+}
+:root {
+    --bg-color:#fcfcfc;
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 20;
+  }
+ 
+  #role {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+ 
+  

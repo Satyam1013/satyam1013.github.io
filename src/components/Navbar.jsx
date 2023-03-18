@@ -3,24 +3,16 @@ import {
   Flex,
   HStack,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   Stack,
-  Image,
   Heading,
-  Center,
   Link,
 } from "@chakra-ui/react";
-import "./navbar.css";
+import "../styles/navbar.css";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import { transform } from "framer-motion";
+// import { transform } from "framer-motion";
 
 const Links = [
   { id: 1, to: "/", text: "Home" },
@@ -31,17 +23,6 @@ const Links = [
 ];
 
 export default function Navbar() {
-  // let activeStyle = {
-  //   textDecoration: "none",
-  //   color: "red",
-  //   fontWeight: "bolder",
-  //   fontSize: "18px",
-  // };
-  // let normalStyle = {
-  //   textDecoration: "none",
-  //   color: "#red",
-  //   fontSize: "16px",
-  // };
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -51,11 +32,13 @@ export default function Navbar() {
         position="sticky"
         top="0"
         bgImage={
-          "https://images.pexels.com/photos/4871011/pexels-photo-4871011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          "https://media1.giphy.com/media/l0Iy0WGm1oN84idbO/giphy.gif?cid=ecf05e47jcmi4v46kgd540hlthhfwf2hhd2uqth6t5aziwx8&rid=giphy.gif&ct=g"
         }
+        boxShadow= {"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
         zIndex="1"
+        opacity={0.9}
       >
         <Flex
           h={16}
@@ -63,37 +46,10 @@ export default function Navbar() {
           justifyContent={{ base: "space-between", lg: "space-around" }}
         >
           <Flex alignItems={"center"}>
-            <Menu>
-              <MenuButton
-                as={Button}
-                rounded={"full"}
-                variant={"link"}
-                cursor={"pointer"}
-                minW={0}
-              >
-                <Heading
-                  fontFamily="sans-serif"
-                  fontSize={{ sm: "24px", md: "30px" }}
-                >
-                  Satyam Banwale
-                </Heading>
-              </MenuButton>
-              <MenuList>
-                <Center>
-                  <Image
-                    size={"sm"}
-                    width="100px"
-                    borderRadius={"50%"}
-                    src={
-                      "https://avatars.githubusercontent.com/u/101392309?v=4"
-                    }
-                  />
-                </Center>
-                <MenuItem>Full Stack Web Developer</MenuItem>
-
-                <MenuDivider />
-              </MenuList>
-            </Menu>
+           <div className="title">
+           <Heading id="naam" fontSize={{base:'15px',lg:'35px'}}> Satyam Banwale</Heading>
+           
+           </div>
           </Flex>
           <HStack spacing={8} alignItems={"center"}>
             <HStack
@@ -105,7 +61,7 @@ export default function Navbar() {
               {Links.map((link) => (
                 <NavLink to={link.to} key={link.id}>
                   <Box
-                  className="hover-underline-animation"
+                    className="hover-underline-animation"
                     _hover={{
                       color: "#9f7aea",
                       transform: "scale(1.2)",

@@ -74,7 +74,9 @@ const About = () => {
             fontSize={{ base: "12px", sm: "15px", md: "20", lg: "25px" }}
             mt="10px"
           >
-            Apart from coding & dsa, I have done M.Sc. in Mathematics{" "}
+            Apart from coding & dsa,
+            <br/>
+            I have done M.Sc. in Mathematics{" "}
           </Text>
           <Text
             mt="10px"
