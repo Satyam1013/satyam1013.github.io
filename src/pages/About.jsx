@@ -13,6 +13,7 @@ const interest = [
 const About = () => {
   return (
     <Box width={"70%"} m="auto">
+   
       <Center>
         <Flex
           fontSize={{ base: "25px", sm: "35px", md: "40", lg: "45px" }}

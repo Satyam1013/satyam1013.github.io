@@ -1,5 +1,5 @@
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import About from "./About";
 import Contact from "./Contact";
 import GithubStats from "../components/GithubStats";
@@ -12,26 +12,13 @@ import { motion, spring } from "framer-motion";
 
 const Home = () => {
   const { ref, inView } = useInView();
-  // const animation = useAnimation();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (inView) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-    // console.log(inView);
-  }, [inView]);
-
 
   return (
     <Box className="bg">
-     
       <Center ref={ref}>
         <motion.div
-          animate={{ x: visible ? 0 : 1 }}
-          initial={{ x: visible ? 0 : "100vw" }}
+          animate={{ x: 1 }}
+          initial={{ x: "50vw" }}
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
           <Flex
@@ -56,14 +43,14 @@ const Home = () => {
         m={{ base: "0.5rem", sm: "1.1rem", md: "2rem", lg: "2.5rem" }}
       >
         <motion.div
-          animate={{ x: visible ? 0 : 1 }}
-          initial={{ x: visible ? 0 : "-100vw" }}
+          animate={{ x: 1 }}
+          initial={{ x: "-50vw" }}
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
           <Heading
             fontSize={{ base: "13px", sm: "1.1rem", md: "2rem", lg: "3rem" }}
             id="role"
-            m={{base:'10px'}}
+            m={{ base: "10px" }}
             color={"purple.400"}
           >
             A MERN Stack Developer
@@ -80,8 +67,8 @@ const Home = () => {
         letterSpacing="1px"
       >
         <motion.div
-          animate={{ x: visible ? 0 : 1 }}
-          initial={{ x: visible ? 0 : "100vw" }}
+          animate={{ x: 1 }}
+          initial={{ x: "50vw" }}
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
           A self-motivating, hard-working and ambitious Web Developer with
@@ -94,52 +81,26 @@ const Home = () => {
       </Box>
 
       <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "-100vw" }}
+        animate={{ x: 1 }}
+        initial={{ x: "-50vw" }}
         transition={{ duration: 3, type: spring, bounce: 0.4 }}
       >
         <About />
       </motion.div>
 
-      <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "100vw" }}
-        transition={{ duration: 3, type: spring, bounce: 0.4 }}
-      >
-        <Timeline />
-      </motion.div>
+      <Timeline />
 
-      <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "-100vw" }}
-        transition={{ duration: 3, type: spring, bounce: 0.4 }}
-      >
-        <Skill />
-      </motion.div>
+      <Skill />
 
-      <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "100vw" }}
-        transition={{ duration: 3, type: spring, bounce: 0.4 }}
-      >
-        <Project />
-      </motion.div>
+      <Project />
       <br />
-      <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "-100vw" }}
-        transition={{ duration: 3, type: spring, bounce: 0.4 }}
-      >
-        <GithubStats />
-      </motion.div>
 
-      <motion.div
-        animate={{ x: visible ? 0 : 1 }}
-        initial={{ x: visible ? 0 : "-100vw" }}
-        transition={{ duration: 3, type: spring, bounce: 0.4 }}
-      >
-        <Contact />
-      </motion.div>
+      <GithubStats />
+
+      <Contact />
+      <Box height={"80px"}>
+        <Heading color={"#9f7ae7"}>Made with 💗 by Satyam Banwale</Heading>
+      </Box>
     </Box>
   );
 };

@@ -1,8 +1,14 @@
 import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/timeline.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Timeline = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <Box className="wrapper">
       <Center>
@@ -34,23 +40,26 @@ const Timeline = () => {
               alt="i"
             />
           </i>
-          <Box className="details">
-            <span className="title">Student</span>
-            <Text
-              fontSize={{ base: "15px", lg: "25px" }}
-              p="7px"
-              color="purple.400"
-            >
-              Masai School
-            </Text>
-            <span>March 2022</span>
-          </Box>
-          <Text>Full Stack Web Development (Full Time) </Text>
-          <Box className="bottom">
-            <i>- MERN Stack</i>
-            <i>- Data Structures & Algorithms</i>
-            <i>- Soft Skills</i>
-          </Box>
+          <div data-aos="fade-right">
+            <Box className="details">
+              <span className="title">Student</span>
+              <Text
+                fontSize={{ base: "15px", lg: "25px" }}
+                p="7px"
+                color="purple.400"
+              >
+                Masai School
+              </Text>
+              <span>March 2022</span>
+            </Box>
+
+            <Text>Full Stack Web Development (Full Time) </Text>
+            <Box className="bottom">
+              <i>- MERN Stack</i>
+              <i>- Data Structures & Algorithms</i>
+              <i>- Soft Skills</i>
+            </Box>
+          </div>
         </section>
       </Box>
       <Box className="row row-2">
@@ -61,19 +70,21 @@ const Timeline = () => {
               alt="i"
             />
           </i>
-          <Box className="details">
-            <span className="title">Student</span>
-            <Text fontSize={{ base: "15px", lg: "25px" }} color="purple.400">
-              MMYVV, Katni
-            </Text>
-            <span>December 2021</span>
-          </Box>
-          <Text>Master of Science (M.Sc.) - Mathematics</Text>
-          <Box className="bottom">
-            <i>- Programming</i>
-           
-            <i>- Differential Equations</i>
-          </Box>
+          <div data-aos="fade-left">
+            <Box className="details">
+              <span className="title">Student</span>
+              <Text fontSize={{ base: "15px", lg: "25px" }} color="purple.400">
+                MMYVV, Katni
+              </Text>
+              <span>December 2021</span>
+            </Box>
+            <Text>Master of Science (M.Sc.) - Mathematics</Text>
+            <Box className="bottom">
+              <i>- Programming</i>
+
+              <i>- Differential Equations</i>
+            </Box>
+          </div>
         </section>
       </Box>
     </Box>
