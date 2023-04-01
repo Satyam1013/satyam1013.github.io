@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 .bg {
-  background-image: url("https://media1.giphy.com/media/l0Iy0WGm1oN84idbO/giphy.gif?cid=ecf05e47jcmi4v46kgd540hlthhfwf2hhd2uqth6t5aziwx8&rid=giphy.gif&ct=g");
+  background-image: url("https://media.giphy.com/media/LpGTkDbFtLQt5J6LGL/giphy.gif");
   /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  background-position: center;
   /* background-size: cover; */
   opacity: 1.9;
 }

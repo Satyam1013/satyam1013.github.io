@@ -153,7 +153,7 @@ export default function CaptionCarousel() {
           <Center>
             <Heading
               fontSize={{ base: "25px", sm: "35px", md: "40", lg: "45px" }}
-              color={"purple.400"}
+              color={"#03ddf0"}
               m={{ base: "1rem", lg: "2rem" }}
             >
               Projects
@@ -229,9 +229,9 @@ export default function CaptionCarousel() {
                   backgroundSize="cover"
                   backgroundImage={`url(${card.image})`}
                   border={{
-                    base: "solid 3px #a17bea",
-                    md: "solid 5px #a17bea",
-                    lg: "solid 10px #a17bea",
+                    base: "solid 3px #03ddf0",
+                    md: "solid 5px #03ddf0",
+                    lg: "solid 10px #03ddf0",
                   }}
                   borderRadius={{ base: "10px", lg: "20px" }}
                 >
@@ -260,7 +260,7 @@ export default function CaptionCarousel() {
           </HashScroll>
 
           <Box width={{ base: "70%", lg: "45%" }} m="auto">
-            <Heading color={"#a17bea"}>Nikka Official</Heading>
+            <Heading color={"#03ddf0"}>Nikka Official</Heading>
             <Text
               width={{ base: "100%", lg: "80%" }}
               m="auto"
@@ -302,7 +302,7 @@ export default function CaptionCarousel() {
                 href={"https://github.com/Satyam1013/famous-cough-3400"}
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   GitHub
                 </Button>
               </Link>
@@ -311,7 +311,7 @@ export default function CaptionCarousel() {
                 href="https://nikka-official.netlify.app/"
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   {" "}
                   Live{" "}
                 </Button>
@@ -388,9 +388,9 @@ export default function CaptionCarousel() {
                   backgroundSize="cover"
                   backgroundImage={`url(${card.image})`}
                   border={{
-                    base: "solid 3px #a17bea",
-                    md: "solid 5px #a17bea",
-                    lg: "solid 10px #a17bea",
+                    base: "solid 3px #03ddf0",
+                    md: "solid 5px #03ddf0",
+                    lg: "solid 10px #03ddf0",
                   }}
                   borderRadius={{ base: "10px", lg: "20px" }}
                 >
@@ -419,7 +419,7 @@ export default function CaptionCarousel() {
           </HashScroll>
 
           <Box width={{ base: "70%", lg: "45%" }} m="auto">
-            <Heading color={"#a17bea"}>Sephora</Heading>
+            <Heading color={"#03ddf0"}>Sephora</Heading>
             <Text
               width={{ base: "100%", lg: "80%" }}
               m="auto"
@@ -461,7 +461,7 @@ export default function CaptionCarousel() {
                 href={"https://github.com/Satyam1013/snotty-star-7899"}
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   GitHub
                 </Button>
               </Link>
@@ -470,7 +470,7 @@ export default function CaptionCarousel() {
                 href="https://superb-squirrel-f5fdc3.netlify.app/"
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   {" "}
                   Live{" "}
                 </Button>
@@ -547,9 +547,9 @@ export default function CaptionCarousel() {
                   backgroundSize="cover"
                   backgroundImage={`url(${card.image})`}
                   border={{
-                    base: "solid 3px #a17bea",
-                    md: "solid 5px #a17bea",
-                    lg: "solid 10px #a17bea",
+                    base: "solid 3px #03ddf0",
+                    md: "solid 5px #03ddf0",
+                    lg: "solid 10px #03ddf0",
                   }}
                   borderRadius={{ base: "10px", lg: "20px" }}
                 >
@@ -573,7 +573,7 @@ export default function CaptionCarousel() {
             </Slider>
           </Box>
           <Box width={{ base: "70%", lg: "45%" }} m="auto">
-            <Heading color={"#a17bea"}>Dot & Key</Heading>
+            <Heading color={"#03ddf0"}>Dot & Key</Heading>
             <Text
               width={{ base: "100%", lg: "80%" }}
               m="auto"
@@ -615,7 +615,7 @@ export default function CaptionCarousel() {
                 href={"https://github.com/OnkarK0273/Dot-Key-Website-Clone"}
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   GitHub
                 </Button>
               </Link>
@@ -624,7 +624,7 @@ export default function CaptionCarousel() {
                 href="https://roasted-brake-1134-dot-kay-lifecare.netlify.app/"
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   {" "}
                   Live{" "}
                 </Button>
@@ -702,9 +702,9 @@ export default function CaptionCarousel() {
                   backgroundSize="cover"
                   backgroundImage={`url(${card.image})`}
                   border={{
-                    base: "solid 3px #a17bea",
-                    md: "solid 5px #a17bea",
-                    lg: "solid 10px #a17bea",
+                    base: "solid 3px #03ddf0",
+                    md: "solid 5px #03ddf0",
+                    lg: "solid 10px #03ddf0",
                   }}
                   borderRadius={{ base: "10px", lg: "20px" }}
                 >
@@ -728,7 +728,7 @@ export default function CaptionCarousel() {
             </Slider>
           </Box>
           <Box width={{ base: "70%", lg: "45%" }} m="auto">
-            <Heading color={"#a17bea"}>Style Craze</Heading>
+            <Heading color={"#03ddf0"}>Style Craze</Heading>
             <Text
               width={{ base: "100%", lg: "80%" }}
               m="auto"
@@ -771,7 +771,7 @@ export default function CaptionCarousel() {
                 href={"https://github.com/mynk2906/shrill-yam-9521"}
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   GitHub
                 </Button>
               </Link>
@@ -780,7 +780,7 @@ export default function CaptionCarousel() {
                 href="https://incredible-chimera-b4c293.netlify.app/"
                 _hover={{ bgColor: "transparent" }}
               >
-                <Button bgColor={"#a17bea"} color="white">
+                <Button bgColor={"#03ddf0"} color="white">
                   {" "}
                   Live{" "}
                 </Button>

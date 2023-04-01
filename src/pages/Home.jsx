@@ -7,15 +7,12 @@ import "../styles/home.css";
 import Project from "./Project";
 import Skill from "./Skills";
 import Timeline from "../components/Timeline";
-import { useInView } from "react-intersection-observer";
 import { motion, spring } from "framer-motion";
 
 const Home = () => {
-  const { ref, inView } = useInView();
-
   return (
     <Box className="bg">
-      <Center ref={ref}>
+      <Center>
         <motion.div
           animate={{ x: 1 }}
           initial={{ x: "50vw" }}
@@ -30,7 +27,7 @@ const Home = () => {
             </Heading>
             <Heading
               fontSize={{ base: "1.5rem", md: "3rem", lg: "4rem" }}
-              color={"purple.400"}
+              color={"#03ddf0"}
               id="name"
             >
               Satyam Banwale
@@ -38,10 +35,7 @@ const Home = () => {
           </Flex>
         </motion.div>
       </Center>
-      <Center
-        ref={ref}
-        m={{ base: "0.5rem", sm: "1.1rem", md: "2rem", lg: "2.5rem" }}
-      >
+      <Center m={{ base: "0.5rem", sm: "1.1rem", md: "2rem", lg: "2.5rem" }}>
         <motion.div
           animate={{ x: 1 }}
           initial={{ x: "-50vw" }}
@@ -51,7 +45,7 @@ const Home = () => {
             fontSize={{ base: "13px", sm: "1.1rem", md: "2rem", lg: "3rem" }}
             id="role"
             m={{ base: "10px" }}
-            color={"purple.400"}
+            color={"#03ddf0"}
           >
             A MERN Stack Developer
           </Heading>
@@ -59,7 +53,6 @@ const Home = () => {
       </Center>
 
       <Box
-        ref={ref}
         m={"auto"}
         fontSize={{ base: "11px", sm: "14px", md: "16px", lg: "21px" }}
         fontWeight="bold"
@@ -71,12 +64,11 @@ const Home = () => {
           initial={{ x: "50vw" }}
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
-          A self-motivating, hard-working and ambitious Web Developer with
-          Proficiency in React JS, Node JS. Problem solving mindset with the
-          ability to perform well in collaboration. 1000+ hour of coding & hands
-          on experience on making 3 fully functional websites. Looking forward
-          to work as a full stack web developer or software engineer in any
-          exciting tech company.
+          A self-motivating, hard-working, and ambitious Web Developer with
+          Proficiency in MERN Stack. Problem-solving mindset with the
+          ability to perform well in collaboration. 2000+ hour of coding & hands
+          on experience on making 50+ mini projects & 7+ fully functional
+          websites. 200+ problems solved in DSA. Looking forward to working as a full-stack web developer or software engineer in any exciting tech company.
         </motion.div>
       </Box>
 
@@ -99,7 +91,13 @@ const Home = () => {
 
       <Contact />
       <Box height={"80px"}>
-        <Heading color={"#9f7ae7"}>Made with 💗 by Satyam Banwale</Heading>
+        <Heading
+          fontFamily={"sans-serif"}
+          fontSize={{ base: "20px", md: "30px" }}
+          color={"#03ddf0"}
+        >
+          Made with 💗 by Satyam Banwale
+        </Heading>
       </Box>
     </Box>
   );

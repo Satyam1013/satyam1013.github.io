@@ -71,7 +71,7 @@ export default function Contact() {
             <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
               <Heading
                 fontSize={{ base: "25px", sm: "35px", md: "40", lg: "45px" }}
-                color="#9f7aea"
+                color="#03ddf0"
               >
                 Get in Touch
               </Heading>
@@ -97,7 +97,7 @@ export default function Contact() {
                       fontSize="3xl"
                       icon={<MdEmail />}
                       _hover={{
-                        bg: "purple.400",
+                        bg: "#03ddf0",
                         color: useColorModeValue("white", "gray.700"),
                       }}
                       onClick={onCopy}
@@ -113,7 +113,7 @@ export default function Contact() {
                       fontSize="3xl"
                       icon={<BsGithub />}
                       _hover={{
-                        bg: "purple.400",
+                        bg: "#03ddf0",
                         color: useColorModeValue("white", "gray.700"),
                       }}
                       isRound
@@ -127,7 +127,7 @@ export default function Contact() {
                       size="lg"
                       icon={<BsTwitter size="28px" />}
                       _hover={{
-                        bg: "purple.400",
+                        bg: "#03ddf0",
                         color: useColorModeValue("white", "gray.700"),
                       }}
                       isRound
@@ -141,7 +141,7 @@ export default function Contact() {
                       size="lg"
                       icon={<BsLinkedin size="28px" />}
                       _hover={{
-                        bg: "purple.400",
+                        bg: "#03ddf0",
                         color: useColorModeValue("white", "gray.700"),
                       }}
                       isRound
@@ -166,7 +166,7 @@ export default function Contact() {
                       />
                       <Button
                         colorScheme="blue"
-                        bg="purple.400"
+                        bg="#03ddf0"
                         color="white"
                         type="submit"
                         _hover={{

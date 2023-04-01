@@ -55,7 +55,7 @@ export default function Navbar() {
             <HStack
               as={"nav"}
               spacing={6}
-              color={"purple.100"}
+              color={"#03ddf0"}
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
@@ -63,7 +63,7 @@ export default function Navbar() {
                   <Box
                     className="hover-underline-animation"
                     _hover={{
-                      color: "#9f7aea",
+                      color: "#03ddf0",
                       transform: "scale(1.2)",
                       transition: "transform .9s",
                     }}
@@ -73,7 +73,7 @@ export default function Navbar() {
                 </NavLink>
               ))}
               <Box>
-                <Link color={"purple.100"} href="/satyamCV.pdf" download>
+                <Link color={"#03ddf0"} href="/satyamCV.pdf" download>
                   Resume
                 </Link>
               </Box>

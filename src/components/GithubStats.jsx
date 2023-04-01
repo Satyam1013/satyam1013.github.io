@@ -24,7 +24,7 @@ const GithubStats = () => {
                   Days I
                 </Heading>
                 <Heading
-                  color={"purple.400"}
+                  color={"#03ddf0"}
                   fontSize={{ base: "25px", sm: "35px", md: "40", lg: "45px" }}
                 >
                   Code

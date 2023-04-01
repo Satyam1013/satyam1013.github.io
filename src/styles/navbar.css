@@ -33,12 +33,12 @@
 }
 
 #naam {
-  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy-downsized-large.gif);
-  /* background-size: cover; */
+  background-image: url(https://media.giphy.com/media/0YplUTV94mXI8bcjgD/giphy.gif);
+  background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 1.9;
   margin: 10px 0;
 }

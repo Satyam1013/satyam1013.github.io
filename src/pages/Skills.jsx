@@ -50,7 +50,7 @@ const Skill = () => {
         <Center>
           <Heading
             fontSize={{ base: "25px", sm: "35px", md: "40px", lg: "45px" }}
-            color={"purple.400"}
+            color={"#03ddf0"}
             m={{ base: "2rem", lg: "4rem" }}
           >
             Skills
