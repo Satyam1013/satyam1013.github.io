@@ -54,7 +54,7 @@ const About = () => {
           src="images/satyam-logo.png"
           alt="pro-pic"
           width={{ base: "250px", lg: "350px" }}
-          height={{ base: "200px", lg: "340px" }}
+          height={{ base: "230px", lg: "340px" }}
           borderRadius="20%"
           m={"auto"}
           mt='25px'
