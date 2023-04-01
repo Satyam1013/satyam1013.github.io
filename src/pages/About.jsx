@@ -53,8 +53,8 @@ const About = () => {
         <Image
           src="images/satyam-logo.png"
           alt="pro-pic"
-          width={{ base: "100px", lg: "350px" }}
-          height={{ base: "100px", lg: "350px" }}
+          width={{ base: "250px", lg: "350px" }}
+          height={{ base: "200px", lg: "340px" }}
           borderRadius="20%"
           m={"auto"}
           mt='25px'
