@@ -42,7 +42,7 @@ const Home = () => {
           transition={{ duration: 3, type: spring, bounce: 0.4 }}
         >
           <Heading
-            fontSize={{ base: "13px", sm: "1.1rem", md: "2rem", lg: "3rem" }}
+            fontSize={{ base: "13px", sm: "1.1rem", md: "1.5rem", lg: "2rem" }}
             id="role"
             m={{ base: "10px" }}
             color={"#03ddf0"}
